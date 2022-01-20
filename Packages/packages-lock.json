@@ -1,5 +1,32 @@
 {
   "dependencies": {
+    "com.htc.upm.wave.essence": {
+      "version": "file:../LocalPackages/com.htc.upm.wave.essence",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.htc.upm.wave.xrsdk": "4.3.0-r.5",
+        "com.htc.upm.wave.native": "4.3.0-r.5"
+      }
+    },
+    "com.htc.upm.wave.native": {
+      "version": "4.3.0-r.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.htc.upm.wave.xrsdk": "4.3.0-r.5"
+      },
+      "url": "https://npm-registry.vive.com"
+    },
+    "com.htc.upm.wave.xrsdk": {
+      "version": "4.3.0-r.5",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.xr.management": "3.0.6"
+      },
+      "url": "https://npm-registry.vive.com"
+    },
     "com.unity.collab-proxy": {
       "version": "1.15.7",
       "depth": 0,
@@ -58,6 +85,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.subsystemregistration": {
+      "version": "1.0.6",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.test-framework": {
       "version": "1.1.29",
       "depth": 0,
@@ -98,6 +132,29 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.unity.xr.legacyinputhelpers": {
+      "version": "2.1.8",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.vr": "1.0.0",
+        "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.management": {
+      "version": "4.0.1",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.subsystems": "1.0.0",
+        "com.unity.modules.vr": "1.0.0",
+        "com.unity.modules.xr": "1.0.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.7",
+        "com.unity.subsystemregistration": "1.0.6"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
